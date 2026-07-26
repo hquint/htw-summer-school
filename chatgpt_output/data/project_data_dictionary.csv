@@ -1,9 +1,0 @@
-file,column,description
-futures_prices.csv,delivery_year,Delivery year of the futures product.
-futures_prices.csv,product_type,BASE or PEAK.
-futures_prices.csv,delivery_period,"CAL, Q1-Q4, or M01-M12."
-futures_prices.csv,price_eur_mwh,Forward/futures price in EUR/MWh.
-futures_prices.csv,is_liquid,Whether the product should be treated as liquid for the base exercise.
-shape_factors.csv,shape_factor_annual_norm,Hourly shape factor normalized to annual average 1.
-slp_portfolio.csv,load_mwh,Expected hourly portfolio load in MWh.
-day_ahead_prices.csv,day_ahead_price_eur_mwh,Realized hourly Day-Ahead price in EUR/MWh.
