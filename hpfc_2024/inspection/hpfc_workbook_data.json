@@ -1,0 +1,558 @@
+{
+  "summary": {
+    "status": "OK",
+    "checks_ok": 8,
+    "checks_total": 8,
+    "curve_rows": 35136,
+    "hpfc_min_eur_mwh": 9.7542,
+    "hpfc_max_eur_mwh": 244.479,
+    "maximum_calibration_error_eur_mwh": 9e-08,
+    "maximum_usable_product_error_eur_mwh": 0.00442749
+  },
+  "checks": [
+    {
+      "check": "HPFC row count",
+      "actual": 35136.0,
+      "expected": 35136,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Full 2024 quarter-hour coverage."
+    },
+    {
+      "check": "Unique UTC timestamps",
+      "actual": 35136.0,
+      "expected": 35136,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "UTC is the unambiguous primary key."
+    },
+    {
+      "check": "Missing cells",
+      "actual": 0.0,
+      "expected": 0,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "No missing values in the final curve."
+    },
+    {
+      "check": "Maximum calibration-product error (EUR/MWh)",
+      "actual": 9e-08,
+      "expected": 0.0,
+      "difference": 9e-08,
+      "tolerance": 1e-06,
+      "status": "OK",
+      "notes": "M01-M03 and Q2-Q4 Base/Peak must tie exactly."
+    },
+    {
+      "check": "Maximum usable-product error (EUR/MWh)",
+      "actual": 0.00442749,
+      "expected": 0.0,
+      "difference": 0.00442749,
+      "tolerance": 0.01,
+      "status": "OK",
+      "notes": "Includes CAL and Q1 consistency checks."
+    },
+    {
+      "check": "Failed usable-product reconciliations",
+      "actual": 0.0,
+      "expected": 0,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Every usable quote is calibrated or cross-checked."
+    },
+    {
+      "check": "Quarter-hours outside calibration coverage",
+      "actual": 0.0,
+      "expected": 0,
+      "difference": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "The selected products cover the year without overlap or gaps."
+    },
+    {
+      "check": "Minimum HPFC price (EUR/MWh)",
+      "actual": 9.754239,
+      "expected": "> 0",
+      "difference": "",
+      "tolerance": "",
+      "status": "OK",
+      "notes": "Sanity check for this positive-price teaching curve."
+    }
+  ],
+  "parameters": [
+    {
+      "delivery_period": "M01",
+      "base_target_eur_mwh": 75.32,
+      "peak_target_eur_mwh": 88.68,
+      "implied_offpeak_target_eur_mwh": 67.44102564,
+      "quarter_hours_all": 2976,
+      "quarter_hours_peak": 1104,
+      "quarter_hours_offpeak": 1872,
+      "peak_shape_mean": 1.16262081,
+      "offpeak_shape_mean": 0.93700505
+    },
+    {
+      "delivery_period": "M02",
+      "base_target_eur_mwh": 60.09,
+      "peak_target_eur_mwh": 70.59,
+      "implied_offpeak_target_eur_mwh": 54.13054054,
+      "quarter_hours_all": 2784,
+      "quarter_hours_peak": 1008,
+      "quarter_hours_offpeak": 1776,
+      "peak_shape_mean": 1.00188602,
+      "offpeak_shape_mean": 0.80092284
+    },
+    {
+      "delivery_period": "M03",
+      "base_target_eur_mwh": 63.45,
+      "peak_target_eur_mwh": 72.79,
+      "implied_offpeak_target_eur_mwh": 58.65635438,
+      "quarter_hours_all": 2972,
+      "quarter_hours_peak": 1008,
+      "quarter_hours_offpeak": 1964,
+      "peak_shape_mean": 0.91574105,
+      "offpeak_shape_mean": 0.72112071
+    },
+    {
+      "delivery_period": "Q2",
+      "base_target_eur_mwh": 66.23,
+      "peak_target_eur_mwh": 64.76,
+      "implied_offpeak_target_eur_mwh": 67.04666667,
+      "quarter_hours_all": 8736,
+      "quarter_hours_peak": 3120,
+      "quarter_hours_offpeak": 5616,
+      "peak_shape_mean": 0.97332004,
+      "offpeak_shape_mean": 0.83948023
+    },
+    {
+      "delivery_period": "Q3",
+      "base_target_eur_mwh": 74.74,
+      "peak_target_eur_mwh": 69.07,
+      "implied_offpeak_target_eur_mwh": 77.91135593,
+      "quarter_hours_all": 8832,
+      "quarter_hours_peak": 3168,
+      "quarter_hours_offpeak": 5664,
+      "peak_shape_mean": 1.297407,
+      "offpeak_shape_mean": 1.0260193
+    },
+    {
+      "delivery_period": "Q4",
+      "base_target_eur_mwh": 101.39,
+      "peak_target_eur_mwh": 134.42,
+      "implied_offpeak_target_eur_mwh": 82.92863091,
+      "quarter_hours_all": 8836,
+      "quarter_hours_peak": 3168,
+      "quarter_hours_offpeak": 5668,
+      "peak_shape_mean": 1.35979711,
+      "offpeak_shape_mean": 0.94319506
+    }
+  ],
+  "reconciliation": [
+    {
+      "load_type": "BASE",
+      "delivery_period": "CAL",
+      "is_calibration_product": 0,
+      "market_activity": 5000,
+      "futures_price_eur_mwh": 77.26,
+      "hpfc_block_average_eur_mwh": 77.25942851,
+      "difference_eur_mwh": -0.00057149,
+      "status": "OK_CROSS_CHECK"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "CAL",
+      "is_calibration_product": 0,
+      "market_activity": 1400,
+      "futures_price_eur_mwh": 86.6,
+      "hpfc_block_average_eur_mwh": 86.60442749,
+      "difference_eur_mwh": 0.00442749,
+      "status": "OK_CROSS_CHECK"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q1",
+      "is_calibration_product": 0,
+      "market_activity": 3000,
+      "futures_price_eur_mwh": 66.42,
+      "hpfc_block_average_eur_mwh": 66.42421898,
+      "difference_eur_mwh": 0.00421898,
+      "status": "OK_CROSS_CHECK"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q1",
+      "is_calibration_product": 0,
+      "market_activity": 840,
+      "futures_price_eur_mwh": 77.7,
+      "hpfc_block_average_eur_mwh": 77.70184618,
+      "difference_eur_mwh": 0.00184618,
+      "status": "OK_CROSS_CHECK"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q2",
+      "is_calibration_product": 1,
+      "market_activity": 2200,
+      "futures_price_eur_mwh": 66.23,
+      "hpfc_block_average_eur_mwh": 66.22999999,
+      "difference_eur_mwh": -1e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q2",
+      "is_calibration_product": 1,
+      "market_activity": 616,
+      "futures_price_eur_mwh": 64.76,
+      "hpfc_block_average_eur_mwh": 64.75999995,
+      "difference_eur_mwh": -5e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q3",
+      "is_calibration_product": 1,
+      "market_activity": 1600,
+      "futures_price_eur_mwh": 74.74,
+      "hpfc_block_average_eur_mwh": 74.73999999,
+      "difference_eur_mwh": -1e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q3",
+      "is_calibration_product": 1,
+      "market_activity": 448,
+      "futures_price_eur_mwh": 69.07,
+      "hpfc_block_average_eur_mwh": 69.07000003,
+      "difference_eur_mwh": 3e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q4",
+      "is_calibration_product": 1,
+      "market_activity": 1400,
+      "futures_price_eur_mwh": 101.39,
+      "hpfc_block_average_eur_mwh": 101.39000002,
+      "difference_eur_mwh": 2e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q4",
+      "is_calibration_product": 1,
+      "market_activity": 392,
+      "futures_price_eur_mwh": 134.42,
+      "hpfc_block_average_eur_mwh": 134.42000003,
+      "difference_eur_mwh": 3e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M01",
+      "is_calibration_product": 1,
+      "market_activity": 900,
+      "futures_price_eur_mwh": 75.32,
+      "hpfc_block_average_eur_mwh": 75.32000009,
+      "difference_eur_mwh": 9e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M01",
+      "is_calibration_product": 1,
+      "market_activity": 252,
+      "futures_price_eur_mwh": 88.68,
+      "hpfc_block_average_eur_mwh": 88.68000008,
+      "difference_eur_mwh": 8e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M02",
+      "is_calibration_product": 1,
+      "market_activity": 800,
+      "futures_price_eur_mwh": 60.09,
+      "hpfc_block_average_eur_mwh": 60.08999996,
+      "difference_eur_mwh": -4e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M02",
+      "is_calibration_product": 1,
+      "market_activity": 224,
+      "futures_price_eur_mwh": 70.59,
+      "hpfc_block_average_eur_mwh": 70.59,
+      "difference_eur_mwh": 0.0,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M03",
+      "is_calibration_product": 1,
+      "market_activity": 650,
+      "futures_price_eur_mwh": 63.45,
+      "hpfc_block_average_eur_mwh": 63.45000001,
+      "difference_eur_mwh": 1e-08,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M03",
+      "is_calibration_product": 1,
+      "market_activity": 182,
+      "futures_price_eur_mwh": 72.79,
+      "hpfc_block_average_eur_mwh": 72.79,
+      "difference_eur_mwh": 0.0,
+      "status": "OK_CALIBRATED"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M04",
+      "is_calibration_product": 0,
+      "market_activity": 10,
+      "futures_price_eur_mwh": 67.11,
+      "hpfc_block_average_eur_mwh": 62.107518,
+      "difference_eur_mwh": -5.002482,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M04",
+      "is_calibration_product": 0,
+      "market_activity": 3,
+      "futures_price_eur_mwh": 72.56,
+      "hpfc_block_average_eur_mwh": 59.18321542,
+      "difference_eur_mwh": -13.37678458,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M05",
+      "is_calibration_product": 0,
+      "market_activity": 8,
+      "futures_price_eur_mwh": 60.96,
+      "hpfc_block_average_eur_mwh": 60.63373795,
+      "difference_eur_mwh": -0.32626205,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M05",
+      "is_calibration_product": 0,
+      "market_activity": 2,
+      "futures_price_eur_mwh": 52.4,
+      "hpfc_block_average_eur_mwh": 59.43877092,
+      "difference_eur_mwh": 7.03877092,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M06",
+      "is_calibration_product": 0,
+      "market_activity": 7,
+      "futures_price_eur_mwh": 79.64,
+      "hpfc_block_average_eur_mwh": 76.1352861,
+      "difference_eur_mwh": -3.5047139,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M06",
+      "is_calibration_product": 0,
+      "market_activity": 2,
+      "futures_price_eur_mwh": 80.57,
+      "hpfc_block_average_eur_mwh": 77.01387633,
+      "difference_eur_mwh": -3.55612367,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M07",
+      "is_calibration_product": 0,
+      "market_activity": 6,
+      "futures_price_eur_mwh": 59.45,
+      "hpfc_block_average_eur_mwh": 64.75916742,
+      "difference_eur_mwh": 5.30916742,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M07",
+      "is_calibration_product": 0,
+      "market_activity": 2,
+      "futures_price_eur_mwh": 49.47,
+      "hpfc_block_average_eur_mwh": 54.72600342,
+      "difference_eur_mwh": 5.25600342,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M08",
+      "is_calibration_product": 0,
+      "market_activity": 5,
+      "futures_price_eur_mwh": 84.8,
+      "hpfc_block_average_eur_mwh": 70.08240897,
+      "difference_eur_mwh": -14.71759103,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M08",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 74.16,
+      "hpfc_block_average_eur_mwh": 66.37868192,
+      "difference_eur_mwh": -7.78131808,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M09",
+      "is_calibration_product": 0,
+      "market_activity": 4,
+      "futures_price_eur_mwh": 73.06,
+      "hpfc_block_average_eur_mwh": 89.86637105,
+      "difference_eur_mwh": 16.80637105,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M09",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 76.62,
+      "hpfc_block_average_eur_mwh": 87.59956767,
+      "difference_eur_mwh": 10.97956767,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M10",
+      "is_calibration_product": 0,
+      "market_activity": 3,
+      "futures_price_eur_mwh": 91.85,
+      "hpfc_block_average_eur_mwh": 93.36178871,
+      "difference_eur_mwh": 1.51178871,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M10",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 111.59,
+      "hpfc_block_average_eur_mwh": 109.43911683,
+      "difference_eur_mwh": -2.15088317,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M11",
+      "is_calibration_product": 0,
+      "market_activity": 2,
+      "futures_price_eur_mwh": 106.66,
+      "hpfc_block_average_eur_mwh": 114.477323,
+      "difference_eur_mwh": 7.817323,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M11",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 140.84,
+      "hpfc_block_average_eur_mwh": 166.70272758,
+      "difference_eur_mwh": 25.86272758,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M12",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 112.07,
+      "hpfc_block_average_eur_mwh": 96.76385067,
+      "difference_eur_mwh": -15.30614933,
+      "status": "NOT_USED_ILLIQUID"
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M12",
+      "is_calibration_product": 0,
+      "market_activity": 1,
+      "futures_price_eur_mwh": 159.75,
+      "hpfc_block_average_eur_mwh": 129.72104708,
+      "difference_eur_mwh": -30.02895292,
+      "status": "NOT_USED_ILLIQUID"
+    }
+  ],
+  "monthly": [
+    {
+      "month": 1,
+      "hpfc_eur_mwh": 75.3200000873656,
+      "realized_day_ahead_eur_mwh": 76.57114247311829
+    },
+    {
+      "month": 2,
+      "hpfc_eur_mwh": 60.08999995833333,
+      "realized_day_ahead_eur_mwh": 61.335847701149426
+    },
+    {
+      "month": 3,
+      "hpfc_eur_mwh": 63.45000001076716,
+      "realized_day_ahead_eur_mwh": 64.70199192462988
+    },
+    {
+      "month": 4,
+      "hpfc_eur_mwh": 62.10751800277778,
+      "realized_day_ahead_eur_mwh": 62.360819444444445
+    },
+    {
+      "month": 5,
+      "hpfc_eur_mwh": 60.63373794623656,
+      "realized_day_ahead_eur_mwh": 67.21001344086021
+    },
+    {
+      "month": 6,
+      "hpfc_eur_mwh": 76.13528609722222,
+      "realized_day_ahead_eur_mwh": 72.88772222222222
+    },
+    {
+      "month": 7,
+      "hpfc_eur_mwh": 64.75916741935484,
+      "realized_day_ahead_eur_mwh": 67.69702956989246
+    },
+    {
+      "month": 8,
+      "hpfc_eur_mwh": 70.08240897043011,
+      "realized_day_ahead_eur_mwh": 82.04717741935484
+    },
+    {
+      "month": 9,
+      "hpfc_eur_mwh": 89.86637104583333,
+      "realized_day_ahead_eur_mwh": 78.30997222222223
+    },
+    {
+      "month": 10,
+      "hpfc_eur_mwh": 93.36178871275168,
+      "realized_day_ahead_eur_mwh": 86.09655033557047
+    },
+    {
+      "month": 11,
+      "hpfc_eur_mwh": 114.47732300416666,
+      "realized_day_ahead_eur_mwh": 113.90644444444445
+    },
+    {
+      "month": 12,
+      "hpfc_eur_mwh": 96.76385066935484,
+      "realized_day_ahead_eur_mwh": 108.31559139784946
+    }
+  ]
+}

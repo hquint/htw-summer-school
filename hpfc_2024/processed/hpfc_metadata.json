@@ -1,0 +1,16 @@
+{
+  "delivery_year": 2024,
+  "quote_date": "2023-09-29",
+  "curve_rows": 35136,
+  "calibration_products": [
+    "M01",
+    "M02",
+    "M03",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "activity_threshold": 100,
+  "shape_source": "data_pipeline_2024/processed/shape_factors.csv; derived from observed 2019-2022 SMARD prices",
+  "futures_source": "data_pipeline_2024/processed/futures_prices.csv; synthetic teaching quotes"
+}

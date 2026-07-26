@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "checks_ok": 8,
+  "checks_total": 8,
+  "curve_rows": 35136,
+  "hpfc_min_eur_mwh": 9.7542,
+  "hpfc_max_eur_mwh": 244.479,
+  "maximum_calibration_error_eur_mwh": 9e-08,
+  "maximum_usable_product_error_eur_mwh": 0.00442749
+}
