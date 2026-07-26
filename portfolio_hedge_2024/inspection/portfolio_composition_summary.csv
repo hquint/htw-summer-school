@@ -1,0 +1,4 @@
+profile_code,profile_description,customer_count,annual_mwh_per_customer,annual_portfolio_mwh,customer_share,energy_share
+HB,Household / Haushalt,10000,3.5,35000.0,0.9784735812133072,0.813953488372093
+GB,General commercial / Gewerbe allgemein,200,30.0,6000.0,0.0195694716242661,0.1395348837209302
+LB,Agriculture / Landwirtschaft,20,100.0,2000.0,0.0019569471624266,0.0465116279069767

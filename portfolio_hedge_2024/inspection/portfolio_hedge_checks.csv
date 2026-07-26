@@ -1,0 +1,12 @@
+check,actual,expected,difference,tolerance,status,notes
+Portfolio customer count,10220.0,10220,0,0,OK,HB must strongly dominate customer count.
+Forecast annual energy (MWh),43000.0,43000,0.0,1e-06,OK,Portfolio assumptions imply 43 GWh.
+Forecast row count,35136.0,35136,0,0,OK,Full leap-year quarter-hour coverage.
+Missing cells in model outputs,0.0,0,0,0,OK,All output tables must be complete.
+Maximum hedge value-neutrality error (EUR),3e-08,0.0,3e-08,0.01,OK,Hedge and forecast load have equal HPFC value.
+Failed optimization blocks,0.0,0,0,0,OK,Every non-overlapping period solved successfully.
+Minimum futures volume (MW),1.54121416,>= 0,,,OK,The teaching hedge uses long positions only.
+Minimum selected market activity,182.0,> 100,,,OK,No deliberately illiquid product may be selected.
+Granular residual RMSE improvement (MW),0.08133290999999998,> 0,,,OK,The granular hedge must fit the forecast shape better.
+Maximum settlement equivalence error (EUR),0.0,0.0,0.0,0.01,OK,Physical-residual and financial-payoff views must agree.
+Minimum hedge saving versus unhedged (EUR),55196.6469271,> 0,,,OK,Synthetic futures should produce a small positive saving.

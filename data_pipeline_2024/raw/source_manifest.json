@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-07-26T12:24:38.919290+00:00",
+  "sources": [
+    {
+      "dataset": "Berlin SLP HB, GB, LB",
+      "publisher": "Stromnetz Berlin GmbH",
+      "status": "observed",
+      "urls": [
+        "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-haushalte-2024.xlsx",
+        "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-gewerbe-allgemein-2024.xlsx",
+        "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-landwirtschaftsbetriebe-2024.xlsx"
+      ]
+    },
+    {
+      "dataset": "DE/LU Day-Ahead prices",
+      "publisher": "Bundesnetzagentur | SMARD.de",
+      "status": "observed",
+      "url": "https://www.smard.de/app/chart_data/4169/DE/index_hour.json"
+    },
+    {
+      "dataset": "Quality-assured reBAP",
+      "publisher": "Netztransparenz / German TSOs",
+      "status": "observed",
+      "url": "https://www.netztransparenz.de/Regelenergie/Ausgleichsenergiepreis/reBAP"
+    }
+  ]
+}

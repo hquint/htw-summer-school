@@ -1,0 +1,24 @@
+{
+  "candidate_seed_start": 1,
+  "candidate_seed_stop": 500,
+  "candidate_count": 500,
+  "selection_rule": "Minimum documented score: proximity to 2% portfolio NMAE and 0.35 EUR/MWh positive imbalance premium, with penalties for negative/excessive premium or hedged monthly volatility not below unhedged.",
+  "recommended_seed": 173,
+  "recommended_seed_metrics": {
+    "seed": 173.0,
+    "score": 0.16522114,
+    "portfolio_nmae": 0.01967364,
+    "annual_actual_energy_mwh": 43138.0,
+    "annual_energy_bias": 0.0032093,
+    "imbalance_settlement_eur": 30503.83979857,
+    "imbalance_settlement_eur_mwh": 0.70712225,
+    "imbalance_premium_eur": 13589.24391983,
+    "imbalance_premium_eur_mwh": 0.31501794,
+    "minimum_actual_factor": 0.80934246,
+    "maximum_actual_factor": 1.2091628,
+    "clipped_quarter_hours": 0.0,
+    "unhedged_monthly_price_std": 20.15327243,
+    "coarse_monthly_price_std": 2.43238212,
+    "granular_monthly_price_std": 18.56308745
+  }
+}

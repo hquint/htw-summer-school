@@ -1,0 +1,12 @@
+file,column,description,data_status
+slp_profiles.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,observed/preprocessed
+slp_profiles.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,observed/preprocessed
+slp_profiles.csv,hb_normalized_kwh,"Berlin household SLP energy; annual sum is 1,000,000 kWh.",observed
+slp_profiles.csv,gb_normalized_kwh,"Berlin general-commercial SLP; annual sum is 1,000,000 kWh.",observed
+slp_profiles.csv,lb_normalized_kwh,"Berlin agriculture SLP; annual sum is 1,000,000 kWh.",observed
+day_ahead_prices.csv,day_ahead_price_eur_mwh,Observed hourly DE/LU DA price repeated over four quarter-hours.,observed/preprocessed
+imbalance_prices.csv,imbalance_price_eur_mwh,Observed quality-assured symmetric German reBAP.,observed
+shape_factors.csv,historical_shape_factor,"Robust real-price shape from 2019-2022, normalized to annual mean 1.",derived
+shape_factors.csv,is_peak,Teaching peak flag: Mon-Fri 08:00-20:00 Europe/Berlin.,derived
+futures_prices.csv,price_eur_mwh,Synthetic teaching forward price; not historical EEX data.,synthetic
+futures_prices.csv,market_activity,Synthetic combined activity indicator; higher means easier to trade.,synthetic

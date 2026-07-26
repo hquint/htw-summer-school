@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "checks_ok": 11,
+  "checks_total": 11,
+  "portfolio_customers": 10220,
+  "portfolio_energy_mwh": 43000.0,
+  "coarse_saving_eur": 55737.35,
+  "granular_saving_eur": 55196.65,
+  "coarse_residual_rmse_mw": 1.766621,
+  "granular_residual_rmse_mw": 1.685288
+}

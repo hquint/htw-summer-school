@@ -1,0 +1,34 @@
+file,column,description,data_status
+slp_profiles.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,observed/preprocessed
+slp_profiles.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,observed/preprocessed
+slp_profiles.csv,hb_normalized_kwh,"Berlin household SLP energy; annual sum is 1,000,000 kWh.",observed
+slp_profiles.csv,gb_normalized_kwh,"Berlin general-commercial SLP energy; annual sum is 1,000,000 kWh.",observed
+slp_profiles.csv,lb_normalized_kwh,"Berlin agricultural SLP energy; annual sum is 1,000,000 kWh.",observed
+futures_prices.csv,quote_date,Date of the teaching futures snapshot.,synthetic
+futures_prices.csv,delivery_year,Calendar year in which the product delivers.,synthetic
+futures_prices.csv,load_type,BASE delivers in all intervals; PEAK only in the defined Peak intervals.,synthetic
+futures_prices.csv,product_type,"YEAR, QUARTER, or MONTH delivery product.",synthetic
+futures_prices.csv,delivery_period,"Product delivery label such as CAL, Q1, or M01.",synthetic
+futures_prices.csv,delivery_start,Inclusive delivery-period start date.,synthetic
+futures_prices.csv,delivery_end_exclusive,Exclusive delivery-period end date.,synthetic
+futures_prices.csv,price_eur_mwh,Teaching forward price in EUR/MWh.,synthetic
+futures_prices.csv,market_activity,Teaching tradability indicator; higher values indicate more active products.,synthetic
+shape_factors.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,derived
+shape_factors.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,derived
+shape_factors.csv,month,"Local calendar month, from 1 to 12.",derived
+shape_factors.csv,hour,"Local delivery hour, from 0 to 23.",derived
+shape_factors.csv,weekday,Local weekday using Monday = 0 and Sunday = 6.,derived
+shape_factors.csv,is_peak,"Peak flag: Monday-Friday, 08:00-20:00 Europe/Berlin.",derived
+shape_factors.csv,historical_shape_factor,Robust 2019-2022 Day-Ahead price shape normalized to annual mean 1.,derived
+day_ahead_prices.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,observed/preprocessed
+day_ahead_prices.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,observed/preprocessed
+day_ahead_prices.csv,day_ahead_price_eur_mwh,Observed hourly DE/LU Day-Ahead price repeated across its four quarter-hours.,observed/preprocessed
+actual_portfolio_load.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,synthetic
+actual_portfolio_load.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,synthetic
+actual_portfolio_load.csv,hb_actual_mwh,Realised household-profile portfolio energy in the quarter-hour.,synthetic
+actual_portfolio_load.csv,gb_actual_mwh,Realised general-commercial-profile portfolio energy in the quarter-hour.,synthetic
+actual_portfolio_load.csv,lb_actual_mwh,Realised agricultural-profile portfolio energy in the quarter-hour.,synthetic
+actual_portfolio_load.csv,total_actual_mwh,Total realised portfolio energy in the quarter-hour.,synthetic
+imbalance_prices.csv,timestamp_utc,Quarter-hour start in UTC; primary join key.,observed
+imbalance_prices.csv,timestamp_local,Quarter-hour start in Europe/Berlin with UTC offset.,observed
+imbalance_prices.csv,imbalance_price_eur_mwh,Observed quality-assured symmetric German reBAP in EUR/MWh.,observed

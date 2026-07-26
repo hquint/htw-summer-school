@@ -1,0 +1,1203 @@
+{
+  "summary": {
+    "status": "OK",
+    "checks_ok": 18,
+    "checks_total": 18,
+    "failed_checks": [],
+    "liquid_product_gain_eur_mwh": 1.2508
+  },
+  "checks": [
+    {
+      "check": "slp: row count",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Full leap-year quarter-hour coverage."
+    },
+    {
+      "check": "slp: missing cells",
+      "actual": 0.0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "No missing values allowed in teaching files."
+    },
+    {
+      "check": "slp: unique timestamps",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "UTC is the unambiguous primary key."
+    },
+    {
+      "check": "da: row count",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Full leap-year quarter-hour coverage."
+    },
+    {
+      "check": "da: missing cells",
+      "actual": 0.0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "No missing values allowed in teaching files."
+    },
+    {
+      "check": "da: unique timestamps",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "UTC is the unambiguous primary key."
+    },
+    {
+      "check": "imb: row count",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Full leap-year quarter-hour coverage."
+    },
+    {
+      "check": "imb: missing cells",
+      "actual": 0.0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "No missing values allowed in teaching files."
+    },
+    {
+      "check": "imb: unique timestamps",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "UTC is the unambiguous primary key."
+    },
+    {
+      "check": "shape: row count",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "Full leap-year quarter-hour coverage."
+    },
+    {
+      "check": "shape: missing cells",
+      "actual": 0.0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "No missing values allowed in teaching files."
+    },
+    {
+      "check": "shape: unique timestamps",
+      "actual": 35136.0,
+      "expected": 35136,
+      "tolerance": 0,
+      "status": "OK",
+      "notes": "UTC is the unambiguous primary key."
+    },
+    {
+      "check": "HB annual normalization (kWh)",
+      "actual": 1000000.0,
+      "expected": 1000000,
+      "tolerance": 0.01,
+      "status": "OK",
+      "notes": "Each official SLP represents 1,000 MWh per year."
+    },
+    {
+      "check": "GB annual normalization (kWh)",
+      "actual": 1000000.0,
+      "expected": 1000000,
+      "tolerance": 0.01,
+      "status": "OK",
+      "notes": "Each official SLP represents 1,000 MWh per year."
+    },
+    {
+      "check": "LB annual normalization (kWh)",
+      "actual": 1000000.0,
+      "expected": 1000000,
+      "tolerance": 0.01,
+      "status": "OK",
+      "notes": "Each official SLP represents 1,000 MWh per year."
+    },
+    {
+      "check": "Shape-factor annual mean",
+      "actual": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-06,
+      "status": "OK",
+      "notes": "Derived historical factor is normalized to 1."
+    },
+    {
+      "check": "Liquid-product mean ex-post gain (EUR/MWh)",
+      "actual": 1.2508,
+      "expected": 1.25,
+      "tolerance": 0.02,
+      "status": "OK",
+      "notes": "Synthetic quotes target a small positive teaching-case gain."
+    },
+    {
+      "check": "Mixed granular set: minimum gain (EUR/MWh)",
+      "actual": 1.2458,
+      "expected": "> 0",
+      "tolerance": "",
+      "status": "OK",
+      "notes": "M01-M03 and Q2-Q4 all deliver positive ex-post payoff."
+    }
+  ],
+  "futures": [
+    {
+      "load_type": "BASE",
+      "delivery_period": "CAL",
+      "price_eur_mwh": 77.26,
+      "market_activity": 5000,
+      "realized_da_average_eur_mwh": 78.512033,
+      "realized_gain_eur_mwh": 1.252033
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "CAL",
+      "price_eur_mwh": 86.6,
+      "market_activity": 1400,
+      "realized_da_average_eur_mwh": 87.854917,
+      "realized_gain_eur_mwh": 1.254917
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q1",
+      "price_eur_mwh": 66.42,
+      "market_activity": 3000,
+      "realized_da_average_eur_mwh": 67.673962,
+      "realized_gain_eur_mwh": 1.253962
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q1",
+      "price_eur_mwh": 77.7,
+      "market_activity": 840,
+      "realized_da_average_eur_mwh": 78.947949,
+      "realized_gain_eur_mwh": 1.247949
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q2",
+      "price_eur_mwh": 66.23,
+      "market_activity": 2200,
+      "realized_da_average_eur_mwh": 67.48315,
+      "realized_gain_eur_mwh": 1.25315
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q2",
+      "price_eur_mwh": 64.76,
+      "market_activity": 616,
+      "realized_da_average_eur_mwh": 66.009487,
+      "realized_gain_eur_mwh": 1.249487
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q3",
+      "price_eur_mwh": 74.74,
+      "market_activity": 1600,
+      "realized_da_average_eur_mwh": 75.993148,
+      "realized_gain_eur_mwh": 1.253148
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q3",
+      "price_eur_mwh": 69.07,
+      "market_activity": 448,
+      "realized_da_average_eur_mwh": 70.323371,
+      "realized_gain_eur_mwh": 1.253371
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "Q4",
+      "price_eur_mwh": 101.39,
+      "market_activity": 1400,
+      "realized_da_average_eur_mwh": 102.64435,
+      "realized_gain_eur_mwh": 1.25435
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "Q4",
+      "price_eur_mwh": 134.42,
+      "market_activity": 392,
+      "realized_da_average_eur_mwh": 135.672917,
+      "realized_gain_eur_mwh": 1.252917
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M01",
+      "price_eur_mwh": 75.32,
+      "market_activity": 900,
+      "realized_da_average_eur_mwh": 76.571142,
+      "realized_gain_eur_mwh": 1.251142
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M01",
+      "price_eur_mwh": 88.68,
+      "market_activity": 252,
+      "realized_da_average_eur_mwh": 89.926014,
+      "realized_gain_eur_mwh": 1.246014
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M02",
+      "price_eur_mwh": 60.09,
+      "market_activity": 800,
+      "realized_da_average_eur_mwh": 61.335848,
+      "realized_gain_eur_mwh": 1.245848
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M02",
+      "price_eur_mwh": 70.59,
+      "market_activity": 224,
+      "realized_da_average_eur_mwh": 71.83619,
+      "realized_gain_eur_mwh": 1.24619
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M03",
+      "price_eur_mwh": 63.45,
+      "market_activity": 650,
+      "realized_da_average_eur_mwh": 64.701992,
+      "realized_gain_eur_mwh": 1.251992
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M03",
+      "price_eur_mwh": 72.79,
+      "market_activity": 182,
+      "realized_da_average_eur_mwh": 74.036111,
+      "realized_gain_eur_mwh": 1.246111
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M04",
+      "price_eur_mwh": 67.11,
+      "market_activity": 10,
+      "realized_da_average_eur_mwh": 62.360819,
+      "realized_gain_eur_mwh": -4.749181
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M04",
+      "price_eur_mwh": 72.56,
+      "market_activity": 3,
+      "realized_da_average_eur_mwh": 66.913826,
+      "realized_gain_eur_mwh": -5.646174
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M05",
+      "price_eur_mwh": 60.96,
+      "market_activity": 8,
+      "realized_da_average_eur_mwh": 67.210013,
+      "realized_gain_eur_mwh": 6.250013
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M05",
+      "price_eur_mwh": 52.4,
+      "market_activity": 2,
+      "realized_da_average_eur_mwh": 59.397428,
+      "realized_gain_eur_mwh": 6.997428
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M06",
+      "price_eur_mwh": 79.64,
+      "market_activity": 7,
+      "realized_da_average_eur_mwh": 72.887722,
+      "realized_gain_eur_mwh": -6.752278
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M06",
+      "price_eur_mwh": 80.57,
+      "market_activity": 2,
+      "realized_da_average_eur_mwh": 72.618583,
+      "realized_gain_eur_mwh": -7.951417
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M07",
+      "price_eur_mwh": 59.45,
+      "market_activity": 6,
+      "realized_da_average_eur_mwh": 67.69703,
+      "realized_gain_eur_mwh": 8.24703
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M07",
+      "price_eur_mwh": 49.47,
+      "market_activity": 2,
+      "realized_da_average_eur_mwh": 58.772138,
+      "realized_gain_eur_mwh": 9.302138
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M08",
+      "price_eur_mwh": 84.8,
+      "market_activity": 5,
+      "realized_da_average_eur_mwh": 82.047177,
+      "realized_gain_eur_mwh": -2.752823
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M08",
+      "price_eur_mwh": 74.16,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 70.809545,
+      "realized_gain_eur_mwh": -3.350455
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M09",
+      "price_eur_mwh": 73.06,
+      "market_activity": 4,
+      "realized_da_average_eur_mwh": 78.309972,
+      "realized_gain_eur_mwh": 5.249972
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M09",
+      "price_eur_mwh": 76.62,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 82.465397,
+      "realized_gain_eur_mwh": 5.845397
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M10",
+      "price_eur_mwh": 91.85,
+      "market_activity": 3,
+      "realized_da_average_eur_mwh": 86.09655,
+      "realized_gain_eur_mwh": -5.75345
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M10",
+      "price_eur_mwh": 111.59,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 104.790725,
+      "realized_gain_eur_mwh": -6.799275
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M11",
+      "price_eur_mwh": 106.66,
+      "market_activity": 2,
+      "realized_da_average_eur_mwh": 113.906444,
+      "realized_gain_eur_mwh": 7.246444
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M11",
+      "price_eur_mwh": 140.84,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 148.989881,
+      "realized_gain_eur_mwh": 8.149881
+    },
+    {
+      "load_type": "BASE",
+      "delivery_period": "M12",
+      "price_eur_mwh": 112.07,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 108.315591,
+      "realized_gain_eur_mwh": -3.754409
+    },
+    {
+      "load_type": "PEAK",
+      "delivery_period": "M12",
+      "price_eur_mwh": 159.75,
+      "market_activity": 1,
+      "realized_da_average_eur_mwh": 155.247197,
+      "realized_gain_eur_mwh": -4.502803
+    }
+  ],
+  "daily_profiles": [
+    {
+      "quarter": 0,
+      "HB": 19.775011,
+      "GB": 17.294951,
+      "LB": 17.236628,
+      "hour": 0.0
+    },
+    {
+      "quarter": 1,
+      "HB": 17.992973,
+      "GB": 16.821773,
+      "LB": 16.573503,
+      "hour": 0.25
+    },
+    {
+      "quarter": 2,
+      "HB": 16.43659,
+      "GB": 16.320861,
+      "LB": 16.025068,
+      "hour": 0.5
+    },
+    {
+      "quarter": 3,
+      "HB": 15.104926,
+      "GB": 15.825473,
+      "LB": 15.575421,
+      "hour": 0.75
+    },
+    {
+      "quarter": 4,
+      "HB": 14.020232,
+      "GB": 15.322814,
+      "LB": 15.199702,
+      "hour": 1.0
+    },
+    {
+      "quarter": 5,
+      "HB": 13.160686,
+      "GB": 14.847,
+      "LB": 14.895101,
+      "hour": 1.25
+    },
+    {
+      "quarter": 6,
+      "HB": 12.491806,
+      "GB": 14.401948,
+      "LB": 14.644669,
+      "hour": 1.5
+    },
+    {
+      "quarter": 7,
+      "HB": 11.976519,
+      "GB": 14.004691,
+      "LB": 14.436347,
+      "hour": 1.75
+    },
+    {
+      "quarter": 8,
+      "HB": 11.595784,
+      "GB": 13.676019,
+      "LB": 14.270407,
+      "hour": 2.0
+    },
+    {
+      "quarter": 9,
+      "HB": 11.315197,
+      "GB": 13.415844,
+      "LB": 14.125571,
+      "hour": 2.25
+    },
+    {
+      "quarter": 10,
+      "HB": 11.114675,
+      "GB": 13.219467,
+      "LB": 13.995407,
+      "hour": 2.5
+    },
+    {
+      "quarter": 11,
+      "HB": 10.956536,
+      "GB": 13.105117,
+      "LB": 13.87465,
+      "hour": 2.75
+    },
+    {
+      "quarter": 12,
+      "HB": 10.822609,
+      "GB": 13.05315,
+      "LB": 13.740811,
+      "hour": 3.0
+    },
+    {
+      "quarter": 13,
+      "HB": 10.725396,
+      "GB": 13.10629,
+      "LB": 13.61147,
+      "hour": 3.25
+    },
+    {
+      "quarter": 14,
+      "HB": 10.64462,
+      "GB": 13.301505,
+      "LB": 13.49891,
+      "hour": 3.5
+    },
+    {
+      "quarter": 15,
+      "HB": 10.62618,
+      "GB": 13.654628,
+      "LB": 13.393664,
+      "hour": 3.75
+    },
+    {
+      "quarter": 16,
+      "HB": 10.641115,
+      "GB": 14.181191,
+      "LB": 13.329653,
+      "hour": 4.0
+    },
+    {
+      "quarter": 17,
+      "HB": 10.718003,
+      "GB": 14.79626,
+      "LB": 13.31468,
+      "hour": 4.25
+    },
+    {
+      "quarter": 18,
+      "HB": 10.838044,
+      "GB": 15.415642,
+      "LB": 13.364593,
+      "hour": 4.5
+    },
+    {
+      "quarter": 19,
+      "HB": 10.994577,
+      "GB": 15.913984,
+      "LB": 13.510347,
+      "hour": 4.75
+    },
+    {
+      "quarter": 20,
+      "HB": 11.221601,
+      "GB": 16.241262,
+      "LB": 13.777883,
+      "hour": 5.0
+    },
+    {
+      "quarter": 21,
+      "HB": 11.662221,
+      "GB": 16.439142,
+      "LB": 14.196336,
+      "hour": 5.25
+    },
+    {
+      "quarter": 22,
+      "HB": 12.509721,
+      "GB": 16.58438,
+      "LB": 14.812175,
+      "hour": 5.5
+    },
+    {
+      "quarter": 23,
+      "HB": 13.944464,
+      "GB": 16.788765,
+      "LB": 15.669973,
+      "hour": 5.75
+    },
+    {
+      "quarter": 24,
+      "HB": 16.060418,
+      "GB": 17.129954,
+      "LB": 16.817822,
+      "hour": 6.0
+    },
+    {
+      "quarter": 25,
+      "HB": 18.62032,
+      "GB": 17.66876,
+      "LB": 18.370254,
+      "hour": 6.25
+    },
+    {
+      "quarter": 26,
+      "HB": 21.294902,
+      "GB": 18.482407,
+      "LB": 20.472281,
+      "hour": 6.5
+    },
+    {
+      "quarter": 27,
+      "HB": 23.76418,
+      "GB": 19.651937,
+      "LB": 23.254721,
+      "hour": 6.75
+    },
+    {
+      "quarter": 28,
+      "HB": 25.776005,
+      "GB": 21.225615,
+      "LB": 26.788464,
+      "hour": 7.0
+    },
+    {
+      "quarter": 29,
+      "HB": 27.380366,
+      "GB": 23.278055,
+      "LB": 30.870415,
+      "hour": 7.25
+    },
+    {
+      "quarter": 30,
+      "HB": 28.691385,
+      "GB": 25.859109,
+      "LB": 35.240191,
+      "hour": 7.5
+    },
+    {
+      "quarter": 31,
+      "HB": 29.846587,
+      "GB": 29.020238,
+      "LB": 39.614814,
+      "hour": 7.75
+    },
+    {
+      "quarter": 32,
+      "HB": 30.940194,
+      "GB": 32.734803,
+      "LB": 43.705415,
+      "hour": 8.0
+    },
+    {
+      "quarter": 33,
+      "HB": 31.953342,
+      "GB": 36.626858,
+      "LB": 47.154478,
+      "hour": 8.25
+    },
+    {
+      "quarter": 34,
+      "HB": 32.845675,
+      "GB": 40.216005,
+      "LB": 49.547311,
+      "hour": 8.5
+    },
+    {
+      "quarter": 35,
+      "HB": 33.571219,
+      "GB": 43.035552,
+      "LB": 50.477831,
+      "hour": 8.75
+    },
+    {
+      "quarter": 36,
+      "HB": 34.105139,
+      "GB": 44.744464,
+      "LB": 49.717831,
+      "hour": 9.0
+    },
+    {
+      "quarter": 37,
+      "HB": 34.483361,
+      "GB": 45.563945,
+      "LB": 47.651642,
+      "hour": 9.25
+    },
+    {
+      "quarter": 38,
+      "HB": 34.720025,
+      "GB": 45.842964,
+      "LB": 44.842852,
+      "hour": 9.5
+    },
+    {
+      "quarter": 39,
+      "HB": 34.876855,
+      "GB": 45.95124,
+      "LB": 41.848224,
+      "hour": 9.75
+    },
+    {
+      "quarter": 40,
+      "HB": 34.998003,
+      "GB": 46.153437,
+      "LB": 39.166533,
+      "hour": 10.0
+    },
+    {
+      "quarter": 41,
+      "HB": 35.105596,
+      "GB": 46.501954,
+      "LB": 37.046883,
+      "hour": 10.25
+    },
+    {
+      "quarter": 42,
+      "HB": 35.264388,
+      "GB": 46.931355,
+      "LB": 35.655473,
+      "hour": 10.5
+    },
+    {
+      "quarter": 43,
+      "HB": 35.522672,
+      "GB": 47.44306,
+      "LB": 35.213995,
+      "hour": 10.75
+    },
+    {
+      "quarter": 44,
+      "HB": 35.908516,
+      "GB": 47.955385,
+      "LB": 35.75573,
+      "hour": 11.0
+    },
+    {
+      "quarter": 45,
+      "HB": 36.441492,
+      "GB": 48.350216,
+      "LB": 36.762522,
+      "hour": 11.25
+    },
+    {
+      "quarter": 46,
+      "HB": 37.119601,
+      "GB": 48.511049,
+      "LB": 37.612415,
+      "hour": 11.5
+    },
+    {
+      "quarter": 47,
+      "HB": 37.961109,
+      "GB": 48.272352,
+      "LB": 37.638049,
+      "hour": 11.75
+    },
+    {
+      "quarter": 48,
+      "HB": 38.920984,
+      "GB": 47.545672,
+      "LB": 36.39527,
+      "hour": 12.0
+    },
+    {
+      "quarter": 49,
+      "HB": 39.805366,
+      "GB": 46.400413,
+      "LB": 34.25962,
+      "hour": 12.25
+    },
+    {
+      "quarter": 50,
+      "HB": 40.368899,
+      "GB": 44.981423,
+      "LB": 31.767331,
+      "hour": 12.5
+    },
+    {
+      "quarter": 51,
+      "HB": 40.398164,
+      "GB": 43.394254,
+      "LB": 29.507104,
+      "hour": 12.75
+    },
+    {
+      "quarter": 52,
+      "HB": 39.724598,
+      "GB": 41.753093,
+      "LB": 27.89021,
+      "hour": 13.0
+    },
+    {
+      "quarter": 53,
+      "HB": 38.529874,
+      "GB": 40.174221,
+      "LB": 26.883284,
+      "hour": 13.25
+    },
+    {
+      "quarter": 54,
+      "HB": 37.056145,
+      "GB": 38.734541,
+      "LB": 26.280951,
+      "hour": 13.5
+    },
+    {
+      "quarter": 55,
+      "HB": 35.569719,
+      "GB": 37.53874,
+      "LB": 25.909967,
+      "hour": 13.75
+    },
+    {
+      "quarter": 56,
+      "HB": 34.26462,
+      "GB": 36.675238,
+      "LB": 25.595809,
+      "hour": 14.0
+    },
+    {
+      "quarter": 57,
+      "HB": 33.164249,
+      "GB": 36.145016,
+      "LB": 25.33029,
+      "hour": 14.25
+    },
+    {
+      "quarter": 58,
+      "HB": 32.198208,
+      "GB": 35.939445,
+      "LB": 25.116391,
+      "hour": 14.5
+    },
+    {
+      "quarter": 59,
+      "HB": 31.328975,
+      "GB": 36.037869,
+      "LB": 24.948142,
+      "hour": 14.75
+    },
+    {
+      "quarter": 60,
+      "HB": 30.520352,
+      "GB": 36.416292,
+      "LB": 24.838369,
+      "hour": 15.0
+    },
+    {
+      "quarter": 61,
+      "HB": 29.793443,
+      "GB": 36.921806,
+      "LB": 24.778456,
+      "hour": 15.25
+    },
+    {
+      "quarter": 62,
+      "HB": 29.161661,
+      "GB": 37.395609,
+      "LB": 24.76423,
+      "hour": 15.5
+    },
+    {
+      "quarter": 63,
+      "HB": 28.659831,
+      "GB": 37.664738,
+      "LB": 24.795475,
+      "hour": 15.75
+    },
+    {
+      "quarter": 64,
+      "HB": 28.310191,
+      "GB": 37.607904,
+      "LB": 24.869249,
+      "hour": 16.0
+    },
+    {
+      "quarter": 65,
+      "HB": 28.195385,
+      "GB": 37.381246,
+      "LB": 25.106945,
+      "hour": 16.25
+    },
+    {
+      "quarter": 66,
+      "HB": 28.386713,
+      "GB": 37.166861,
+      "LB": 25.635686,
+      "hour": 16.5
+    },
+    {
+      "quarter": 67,
+      "HB": 28.977623,
+      "GB": 37.172008,
+      "LB": 26.586342,
+      "hour": 16.75
+    },
+    {
+      "quarter": 68,
+      "HB": 30.007721,
+      "GB": 37.485046,
+      "LB": 28.072582,
+      "hour": 17.0
+    },
+    {
+      "quarter": 69,
+      "HB": 31.406005,
+      "GB": 37.846637,
+      "LB": 30.127167,
+      "hour": 17.25
+    },
+    {
+      "quarter": 70,
+      "HB": 33.070443,
+      "GB": 37.920238,
+      "LB": 32.77532,
+      "hour": 17.5
+    },
+    {
+      "quarter": 71,
+      "HB": 34.892847,
+      "GB": 37.334549,
+      "LB": 36.033352,
+      "hour": 17.75
+    },
+    {
+      "quarter": 72,
+      "HB": 36.778623,
+      "GB": 35.862801,
+      "LB": 39.847077,
+      "hour": 18.0
+    },
+    {
+      "quarter": 73,
+      "HB": 38.648044,
+      "GB": 33.742467,
+      "LB": 43.787036,
+      "hour": 18.25
+    },
+    {
+      "quarter": 74,
+      "HB": 40.45474,
+      "GB": 31.315669,
+      "LB": 47.372945,
+      "hour": 18.5
+    },
+    {
+      "quarter": 75,
+      "HB": 42.128265,
+      "GB": 28.952036,
+      "LB": 50.108399,
+      "hour": 18.75
+    },
+    {
+      "quarter": 76,
+      "HB": 43.59653,
+      "GB": 26.92962,
+      "LB": 51.596022,
+      "hour": 19.0
+    },
+    {
+      "quarter": 77,
+      "HB": 44.71297,
+      "GB": 25.305077,
+      "LB": 51.806413,
+      "hour": 19.25
+    },
+    {
+      "quarter": 78,
+      "HB": 45.29291,
+      "GB": 24.09694,
+      "LB": 50.814642,
+      "hour": 19.5
+    },
+    {
+      "quarter": 79,
+      "HB": 45.158582,
+      "GB": 23.284358,
+      "LB": 48.703861,
+      "hour": 19.75
+    },
+    {
+      "quarter": 80,
+      "HB": 44.238437,
+      "GB": 22.847262,
+      "LB": 45.606959,
+      "hour": 20.0
+    },
+    {
+      "quarter": 81,
+      "HB": 42.764653,
+      "GB": 22.653145,
+      "LB": 41.929344,
+      "hour": 20.25
+    },
+    {
+      "quarter": 82,
+      "HB": 41.076587,
+      "GB": 22.535049,
+      "LB": 38.136437,
+      "hour": 20.5
+    },
+    {
+      "quarter": 83,
+      "HB": 39.491372,
+      "GB": 22.334803,
+      "LB": 34.705208,
+      "hour": 20.75
+    },
+    {
+      "quarter": 84,
+      "HB": 38.265661,
+      "GB": 21.935716,
+      "LB": 31.987,
+      "hour": 21.0
+    },
+    {
+      "quarter": 85,
+      "HB": 37.314964,
+      "GB": 21.391661,
+      "LB": 29.919046,
+      "hour": 21.25
+    },
+    {
+      "quarter": 86,
+      "HB": 36.487956,
+      "GB": 20.801699,
+      "LB": 28.305577,
+      "hour": 21.5
+    },
+    {
+      "quarter": 87,
+      "HB": 35.619443,
+      "GB": 20.249158,
+      "LB": 26.966322,
+      "hour": 21.75
+    },
+    {
+      "quarter": 88,
+      "HB": 34.572227,
+      "GB": 19.818391,
+      "LB": 25.738702,
+      "hour": 22.0
+    },
+    {
+      "quarter": 89,
+      "HB": 33.310153,
+      "GB": 19.490522,
+      "LB": 24.56744,
+      "hour": 22.25
+    },
+    {
+      "quarter": 90,
+      "HB": 31.811022,
+      "GB": 19.217732,
+      "LB": 23.439303,
+      "hour": 22.5
+    },
+    {
+      "quarter": 91,
+      "HB": 30.066462,
+      "GB": 18.92994,
+      "LB": 22.297803,
+      "hour": 22.75
+    },
+    {
+      "quarter": 92,
+      "HB": 28.076101,
+      "GB": 18.610142,
+      "LB": 21.14262,
+      "hour": 23.0
+    },
+    {
+      "quarter": 93,
+      "HB": 25.92003,
+      "GB": 18.243913,
+      "LB": 20.00626,
+      "hour": 23.25
+    },
+    {
+      "quarter": 94,
+      "HB": 23.697549,
+      "GB": 17.824798,
+      "LB": 18.928964,
+      "hour": 23.5
+    },
+    {
+      "quarter": 95,
+      "HB": 21.504303,
+      "GB": 17.351803,
+      "LB": 17.960399,
+      "hour": 23.75
+    }
+  ],
+  "monthly_prices": [
+    {
+      "month": 1,
+      "day_ahead_eur_mwh": 76.571142,
+      "imbalance_eur_mwh": 87.0108
+    },
+    {
+      "month": 2,
+      "day_ahead_eur_mwh": 61.335848,
+      "imbalance_eur_mwh": 60.414885
+    },
+    {
+      "month": 3,
+      "day_ahead_eur_mwh": 64.701992,
+      "imbalance_eur_mwh": 63.503203
+    },
+    {
+      "month": 4,
+      "day_ahead_eur_mwh": 62.360819,
+      "imbalance_eur_mwh": 52.966222
+    },
+    {
+      "month": 5,
+      "day_ahead_eur_mwh": 67.210013,
+      "imbalance_eur_mwh": 60.873797
+    },
+    {
+      "month": 6,
+      "day_ahead_eur_mwh": 72.887722,
+      "imbalance_eur_mwh": 116.85501
+    },
+    {
+      "month": 7,
+      "day_ahead_eur_mwh": 67.69703,
+      "imbalance_eur_mwh": 79.405709
+    },
+    {
+      "month": 8,
+      "day_ahead_eur_mwh": 82.047177,
+      "imbalance_eur_mwh": 93.383535
+    },
+    {
+      "month": 9,
+      "day_ahead_eur_mwh": 78.309972,
+      "imbalance_eur_mwh": 84.203997
+    },
+    {
+      "month": 10,
+      "day_ahead_eur_mwh": 86.09655,
+      "imbalance_eur_mwh": 86.064758
+    },
+    {
+      "month": 11,
+      "day_ahead_eur_mwh": 113.906444,
+      "imbalance_eur_mwh": 115.034882
+    },
+    {
+      "month": 12,
+      "day_ahead_eur_mwh": 108.315591,
+      "imbalance_eur_mwh": 128.721022
+    }
+  ],
+  "sources": [
+    {
+      "dataset": "Berlin SLP HB",
+      "publisher": "Stromnetz Berlin GmbH",
+      "status": "observed",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-haushalte-2024.xlsx"
+    },
+    {
+      "dataset": "Berlin SLP GB",
+      "publisher": "Stromnetz Berlin GmbH",
+      "status": "observed",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-gewerbe-allgemein-2024.xlsx"
+    },
+    {
+      "dataset": "Berlin SLP LB",
+      "publisher": "Stromnetz Berlin GmbH",
+      "status": "observed",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-landwirtschaftsbetriebe-2024.xlsx"
+    },
+    {
+      "dataset": "Day-Ahead price and historical shape inputs",
+      "publisher": "Bundesnetzagentur | SMARD.de",
+      "status": "observed",
+      "url": "https://www.smard.de/app/chart_data/4169/DE/index_hour.json"
+    },
+    {
+      "dataset": "Quality-assured reBAP",
+      "publisher": "Netztransparenz / German TSOs",
+      "status": "observed",
+      "url": "https://www.netztransparenz.de/Regelenergie/Ausgleichsenergiepreis/reBAP"
+    },
+    {
+      "dataset": "Teaching futures snapshot",
+      "publisher": "HTW Summer School project",
+      "status": "synthetic",
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+check,actual,expected,difference,tolerance,status,notes
+HPFC row count,35136.0,35136,0,0,OK,Full 2024 quarter-hour coverage.
+Unique UTC timestamps,35136.0,35136,0,0,OK,UTC is the unambiguous primary key.
+Missing cells,0.0,0,0,0,OK,No missing values in the final curve.
+Maximum calibration-product error (EUR/MWh),9e-08,0.0,9e-08,1e-06,OK,M01-M03 and Q2-Q4 Base/Peak must tie exactly.
+Maximum usable-product error (EUR/MWh),0.00442749,0.0,0.00442749,0.01,OK,Includes CAL and Q1 consistency checks.
+Failed usable-product reconciliations,0.0,0,0,0,OK,Every usable quote is calibrated or cross-checked.
+Quarter-hours outside calibration coverage,0.0,0,0,0,OK,The selected products cover the year without overlap or gaps.
+Minimum HPFC price (EUR/MWh),9.754239,> 0,,,OK,Sanity check for this positive-price teaching curve.

@@ -1,0 +1,22 @@
+strategy,line_item,classification,amount_eur,notes
+UNHEDGED,Fixed futures cost,COST_COMPONENT,0.0,Positive is procurement cost; negative is sale revenue.
+UNHEDGED,Day-Ahead scheduled cost,COST_COMPONENT,3506703.99098364,Positive is procurement cost; negative is sale revenue.
+UNHEDGED,reBAP imbalance settlement,COST_COMPONENT,30503.83979857,Positive is procurement cost; negative is sale revenue.
+UNHEDGED,Final procurement cost,SUBTOTAL,3537207.83078221,Sum of the three procurement cost components.
+UNHEDGED,Saving versus unhedged,INFORMATIONAL,0.0,"Realized procurement-cost difference, not trading profit."
+UNHEDGED,Futures payoff versus Day-Ahead,INFORMATIONAL,0.0,Financial hedge payoff already reflected in final cost.
+UNHEDGED,Imbalance premium versus Day-Ahead,INFORMATIONAL,13589.24391983,Price effect of reBAP rather than Day-Ahead.
+COARSE_CAL,Fixed futures cost,COST_COMPONENT,3493701.73311063,Positive is procurement cost; negative is sale revenue.
+COARSE_CAL,Day-Ahead scheduled cost,COST_COMPONENT,-42735.08965054,Positive is procurement cost; negative is sale revenue.
+COARSE_CAL,reBAP imbalance settlement,COST_COMPONENT,30503.83979857,Positive is procurement cost; negative is sale revenue.
+COARSE_CAL,Final procurement cost,SUBTOTAL,3481470.48325866,Sum of the three procurement cost components.
+COARSE_CAL,Saving versus unhedged,INFORMATIONAL,55737.34752355,"Realized procurement-cost difference, not trading profit."
+COARSE_CAL,Futures payoff versus Day-Ahead,INFORMATIONAL,55737.34752355,Financial hedge payoff already reflected in final cost.
+COARSE_CAL,Imbalance premium versus Day-Ahead,INFORMATIONAL,13589.24391983,Price effect of reBAP rather than Day-Ahead.
+GRANULAR,Fixed futures cost,COST_COMPONENT,3493705.91681754,Positive is procurement cost; negative is sale revenue.
+GRANULAR,Day-Ahead scheduled cost,COST_COMPONENT,-42198.572761,Positive is procurement cost; negative is sale revenue.
+GRANULAR,reBAP imbalance settlement,COST_COMPONENT,30503.83979857,Positive is procurement cost; negative is sale revenue.
+GRANULAR,Final procurement cost,SUBTOTAL,3482011.18385511,Sum of the three procurement cost components.
+GRANULAR,Saving versus unhedged,INFORMATIONAL,55196.6469271,"Realized procurement-cost difference, not trading profit."
+GRANULAR,Futures payoff versus Day-Ahead,INFORMATIONAL,55196.6469271,Financial hedge payoff already reflected in final cost.
+GRANULAR,Imbalance premium versus Day-Ahead,INFORMATIONAL,13589.24391983,Price effect of reBAP rather than Day-Ahead.

@@ -1,0 +1,7 @@
+dataset,publisher,status,url
+Berlin SLP HB,Stromnetz Berlin GmbH,observed,https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-haushalte-2024.xlsx
+Berlin SLP GB,Stromnetz Berlin GmbH,observed,https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-gewerbe-allgemein-2024.xlsx
+Berlin SLP LB,Stromnetz Berlin GmbH,observed,https://www.stromnetz.berlin/files/globalassets/dokumente/netz-nutzen/lastprofile/standardlastprofil-landwirtschaftsbetriebe-2024.xlsx
+Day-Ahead price and historical shape inputs,Bundesnetzagentur | SMARD.de,observed,https://www.smard.de/app/chart_data/4169/DE/index_hour.json
+Quality-assured reBAP,Netztransparenz / German TSOs,observed,https://www.netztransparenz.de/Regelenergie/Ausgleichsenergiepreis/reBAP
+Teaching futures snapshot,HTW Summer School project,synthetic,
