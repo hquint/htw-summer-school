@@ -1,0 +1,19 @@
+check,actual,expected,tolerance,status,notes
+slp: row count,35136.0,35136,0,OK,Full leap-year quarter-hour coverage.
+slp: missing cells,0.0,0,0,OK,No missing values allowed in teaching files.
+slp: unique timestamps,35136.0,35136,0,OK,UTC is the unambiguous primary key.
+da: row count,35136.0,35136,0,OK,Full leap-year quarter-hour coverage.
+da: missing cells,0.0,0,0,OK,No missing values allowed in teaching files.
+da: unique timestamps,35136.0,35136,0,OK,UTC is the unambiguous primary key.
+imb: row count,35136.0,35136,0,OK,Full leap-year quarter-hour coverage.
+imb: missing cells,0.0,0,0,OK,No missing values allowed in teaching files.
+imb: unique timestamps,35136.0,35136,0,OK,UTC is the unambiguous primary key.
+shape: row count,35136.0,35136,0,OK,Full leap-year quarter-hour coverage.
+shape: missing cells,0.0,0,0,OK,No missing values allowed in teaching files.
+shape: unique timestamps,35136.0,35136,0,OK,UTC is the unambiguous primary key.
+HB annual normalization (kWh),1000000.0,1000000,0.01,OK,"Each official SLP represents 1,000 MWh per year."
+GB annual normalization (kWh),1000000.0,1000000,0.01,OK,"Each official SLP represents 1,000 MWh per year."
+LB annual normalization (kWh),1000000.0,1000000,0.01,OK,"Each official SLP represents 1,000 MWh per year."
+Shape-factor annual mean,1.0,1.0,1e-06,OK,Derived historical factor is normalized to 1.
+Liquid-product mean ex-post gain (EUR/MWh),1.2508,1.25,0.02,OK,Synthetic quotes target a small positive teaching-case gain.
+Mixed granular set: minimum gain (EUR/MWh),1.2458,> 0,,OK,M01-M03 and Q2-Q4 all deliver positive ex-post payoff.
