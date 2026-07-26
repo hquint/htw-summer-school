@@ -1,4 +1,4 @@
-"""Validate and visualize the value-neutral 2024 HPFC."""
+"""Validate and visualize the arbitrage-consistent 2024 HPFC."""
 
 from __future__ import annotations
 
@@ -201,7 +201,7 @@ def monthly_summary(
         summary["hpfc_eur_mwh"],
         color=COLORS["HPFC"],
         marker="o",
-        label="Value-neutral HPFC",
+        label="Arbitrage-consistent HPFC",
     )
     ax.plot(
         summary["month"],
@@ -273,7 +273,7 @@ def create_sample_weeks(curve: pd.DataFrame) -> pd.DataFrame:
         ax.tick_params(axis="x", rotation=25)
 
     axes[0, 0].legend(frameon=False, loc="upper left")
-    fig.suptitle("Seasonal sample weeks of the value-neutral HPFC")
+    fig.suptitle("Seasonal sample weeks of the arbitrage-consistent HPFC")
     fig.supxlabel("Europe/Berlin local time")
     fig.supylabel("EUR/MWh")
     fig.tight_layout()

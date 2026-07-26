@@ -1,4 +1,4 @@
-"""Build a value-neutral 2024 HPFC from the selected liquid futures."""
+"""Build an arbitrage-consistent 2024 HPFC from selected liquid futures."""
 
 from __future__ import annotations
 
@@ -276,4 +276,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

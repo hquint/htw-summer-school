@@ -1,8 +1,10 @@
 # HTW Summer School 2024 HPFC
 
 This folder constructs the default hourly price forward curve (HPFC) for the
-2024 teaching project. It consumes the curated inputs in
-`data_pipeline_2024/processed`; it does not download or modify source data.
+2024 teaching project. The curve is arbitrage-consistent with the selected
+tradable futures and preserves their quoted Base and Peak block values. It
+consumes the curated inputs in `data_pipeline_2024/processed`; it does not
+download or modify source data.
 
 ## Calibration set
 
@@ -15,7 +17,7 @@ Together these products cover the full year exactly once. CAL and Q1 remain
 independent reconciliation checks. The deliberately illiquid M04-M12 quotes
 are not used to construct the curve.
 
-## Value-neutral construction
+## Contract-consistent construction
 
 For each calibration period, the Peak target is the quoted Peak future. The
 implied Off-Peak target is:
@@ -32,7 +34,8 @@ Within Peak and Off-Peak separately, the historical shape is rescaled:
 HPFC_t = P_slice * shape_t / mean(shape_slice)
 ```
 
-This preserves the relative historical pattern while guaranteeing:
+This preserves the relative historical pattern while guaranteeing contract
+consistency:
 
 - the average Peak HPFC equals the Peak future;
 - the average full-period HPFC equals the Base future.
@@ -65,12 +68,13 @@ The build is deterministic and needs no internet access once
 
 ## Interpretation
 
-- The HPFC is a forward-valuation curve, not a prediction of realized 2024
-  Day-Ahead prices.
+- The HPFC is an arbitrage-consistent forward-valuation curve, not a prediction
+  of realized 2024 Day-Ahead prices and not itself a hedge.
+- “Value-neutral” is reserved for the subsequent hedge constraint: the hedge
+  and forecast load must have equal value when measured with this HPFC.
 - CAL and Q1 reconcile within half a cent per MWh. Their tiny residuals are
   caused by the synthetic quotes being rounded independently to cents.
 - Illiquid monthly products intentionally do not reconcile and are reported as
   `NOT_USED_ILLIQUID`.
 - The next modelling step is to combine this curve with a customer portfolio,
   hedge optimization, residual Day-Ahead shaping and imbalance settlement.
-
