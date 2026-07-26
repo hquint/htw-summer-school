@@ -1,0 +1,4 @@
+profile_code,profile_description,customer_count,annual_mwh_per_customer
+HB,Household / Haushalt,10000,3.5
+GB,General commercial / Gewerbe allgemein,200,30
+LB,Agriculture / Landwirtschaft,20,100

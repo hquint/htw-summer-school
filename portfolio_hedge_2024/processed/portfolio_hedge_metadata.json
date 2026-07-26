@@ -1,0 +1,21 @@
+{
+  "delivery_year": 2024,
+  "quote_date": "2023-09-29",
+  "portfolio_customers": 10220,
+  "portfolio_energy_mwh": 43000.0,
+  "strategies": {
+    "COARSE_CAL": [
+      "CAL"
+    ],
+    "GRANULAR": [
+      "M01",
+      "M02",
+      "M03",
+      "Q2",
+      "Q3",
+      "Q4"
+    ]
+  },
+  "value_neutrality": "Hedge and forecast load have equal HPFC value within each non-overlapping optimization period.",
+  "imbalance_included": false
+}
