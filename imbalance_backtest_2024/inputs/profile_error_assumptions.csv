@@ -1,0 +1,5 @@
+profile_code,annual_bias,idiosyncratic_sigma,idiosyncratic_ar,description
+HB,0.004,0.006,0.9,Household portfolio with strong aggregation across 10000 customers.
+GB,-0.003,0.025,0.92,Commercial portfolio with fewer customers and more idiosyncratic variation.
+LB,0.008,0.045,0.9,Agricultural portfolio with only 20 customers and the largest idiosyncratic variation.
+

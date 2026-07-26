@@ -1,0 +1,21 @@
+check,actual,expected,difference,tolerance,status,notes
+Locked seed matches metadata,173.0,173,0,0,OK,The production build must use the documented deterministic seed.
+Quarter-hour row count,35136.0,35136,0,0,OK,Complete leap-year quarter-hour coverage.
+Missing cells in model outputs,0.0,0,0,0,OK,All final output tables must be complete.
+Actual annual energy matches profile biases (MWh),43137.99999919,43138.0,-8.100032573565841e-07,1e-06,OK,Energy-weighted random shocks are centered by profile.
+Profile actual energy reconciles to portfolio (MWh),8.100032573565841e-07,0.0,8.100032573565841e-07,1e-06,OK,"HB, GB and LB actual energy must sum to portfolio actual energy."
+Clipped profile quarter-hours,0.0,0,0,0,OK,Selected seed remains inside the configured factor bounds.
+Portfolio normalized mean absolute error,0.019673638020697673,1.5% to 3.0%,,,OK,Aggregate forecast error should be visible but plausible.
+Observed reBAP source alignment (EUR/MWh),0.0,0.0,0.0,0.0,OK,The backtest must not modify the observed imbalance prices.
+Maximum imbalance-volume identity error (MWh),4.440892098500626e-16,0.0,4.440892098500626e-16,1e-06,OK,Imbalance volume equals actual minus forecast schedule.
+Maximum reBAP settlement identity error (EUR),6.327250002868823e-05,0.0,6.327250002868823e-05,0.01,OK,Signed imbalance volume is settled at observed reBAP.
+Maximum imbalance-premium identity error (EUR),6.254250001802575e-05,0.0,6.254250001802575e-05,0.01,OK,Premium isolates reBAP versus Day-Ahead pricing of the deviation.
+Maximum final-cost identity error (EUR),1.000009142160252e-08,0.0,1.000009142160252e-08,0.01,OK,Final cost equals forecast procurement plus imbalance settlement.
+Maximum annual cost-component error (EUR),3.2014213502407074e-10,0.0,3.2014213502407074e-10,0.01,OK,Annual cost bridge must reconcile for every strategy.
+Maximum procurement P&L reconciliation error (EUR),0.0,0.0,0.0,0.01,OK,Cost-component lines must sum to final procurement cost.
+Maximum monthly-to-annual rollup error (EUR),9.778887033462524e-09,0.0,9.778887033462524e-09,0.01,OK,Twelve monthly costs must sum to each annual result.
+Minimum realized hedge saving (EUR),55196.6469271,> 0,,,OK,Both teaching hedges remain slightly cheaper after imbalance.
+Maximum hedge-saving tie error before/after imbalance (EUR),0.0,0.0,0.0,0.01,OK,Identical load forecast error must not change hedge savings.
+Imbalance premium (EUR/MWh actual),0.315017940558904,0.10 to 1.50,,,OK,Selected seed gives a moderate positive cost of forecast error.
+Maximum hedged monthly volatility versus unhedged,18.56308745,< 20.153272,,,OK,Both hedges should reduce monthly procurement-price variability.
+Granular reduction in absolute open DA volume (MWh),774.9821458799997,> 0,,,OK,Granular products should improve forecast-shape coverage.

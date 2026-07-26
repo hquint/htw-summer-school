@@ -1,0 +1,4 @@
+profile_code,forecast_energy_mwh,actual_energy_mwh,annual_bias,absolute_error_mwh,normalized_mean_absolute_error,minimum_actual_factor,maximum_actual_factor,clipped_quarter_hours
+HB,35000.0,35140.0,0.004,686.94839301,0.0196271,0.92681816,1.07664067,0
+GB,6000.0,5982.0,-0.003,166.26064061,0.02771011,0.87301334,1.11638793,0
+LB,2000.0,2016.0,0.008,80.79621831,0.04039811,0.80934246,1.2091628,0

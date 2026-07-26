@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "checks_ok": 20,
+  "checks_total": 20,
+  "locked_seed": 173,
+  "actual_energy_mwh": 43138.0,
+  "portfolio_nmae": 0.019674,
+  "imbalance_premium_eur": 13589.24,
+  "coarse_final_eur_mwh": 80.705422,
+  "granular_final_eur_mwh": 80.717956
+}
