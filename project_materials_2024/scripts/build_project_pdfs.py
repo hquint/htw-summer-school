@@ -707,6 +707,7 @@ def make_list(items: list[str], ordered: bool) -> Table:
             ]
         )
     )
+    table._is_list = True
     return table
 
 
@@ -726,10 +727,14 @@ def bind_formula_introductions(flowables: list) -> list:
     while index < len(flowables):
         current = flowables[index]
         following = flowables[index + 1] if index + 1 < len(flowables) else None
+        follows_bound_block = (
+            getattr(following, "_is_code_block", False)
+            or getattr(following, "_is_list", False)
+        )
         if (
             isinstance(current, Paragraph)
             and current.getPlainText().rstrip().endswith(":")
-            and getattr(following, "_is_code_block", False)
+            and follows_bound_block
         ):
             bound.append(KeepTogether([current, following]))
             index += 2
@@ -762,6 +767,8 @@ def markdown_to_flowables(lines: list[str], compact: bool = False) -> list:
 
         if stripped.startswith("### "):
             if stripped == "### Exhibit 4 - Realised market prices":
+                flowables.append(PageBreak())
+            if stripped == "### 5.3 Check the hedge":
                 flowables.append(PageBreak())
             flowables.append(Paragraph(inline_markup(stripped[4:]), STYLES["h3"]))
             index += 1

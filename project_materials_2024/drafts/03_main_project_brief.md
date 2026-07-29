@@ -108,6 +108,13 @@ Explain how the customer mix affects the daily and seasonal load shape and the p
 
 Your manager needs an hourly valuation of the portfolio, but the futures market provides only average prices for broad delivery blocks. Construct a simplified Hourly Price Forward Curve (HPFC), represented on the project's quarter-hourly grid, using the eligible non-overlapping products selected for the granular strategy.
 
+The HPFC combines two sources of information:
+
+- traded futures determine market-consistent price levels for overlapping delivery blocks; and
+- an hourly model determines how prices vary within these blocks.
+
+The following subsections describe these two stages and their reconciliation. Further details and alternative approaches will be discussed in the lectures.
+
 ### 4.1 Infer the Off-Peak price
 
 For each selected delivery period, the Base future gives the average price across all intervals, while the Peak future gives the average across only the Peak intervals. To shape Peak and Off-Peak hours separately without changing the quoted Base value, the prices must satisfy:
@@ -152,6 +159,8 @@ Use eligible products that were not used to build the HPFC as independent reconc
 Conclude this stage by explaining why a contract-consistent HPFC is useful for valuation but is not a forecast of realised Day-Ahead prices.
 
 ## 5. Stage 3 - Optimize the futures hedge
+
+Electricity retailers seek to manage their exposure to both price and volume risk. This section outlines basic futures-hedging principles for the forecast portfolio; the remaining realised volume risk is addressed during delivery. Further details and alternative hedging approaches will be discussed in the lectures.
 
 **Inputs:** the forecast portfolio, completed HPFC, and `futures_prices.csv`
 
